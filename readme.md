@@ -16,6 +16,7 @@ python, tkinter, pil
 
 # 3 How to run it
 This software depends on `pipenv` how one does `pipenv` one can find here: [pipenv](https://docs.python-guide.org/dev/virtualenvs/)
+
 Run: imagesplitter.py
 
 # 4 Class diagram
