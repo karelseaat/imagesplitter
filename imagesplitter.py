@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 
 # https://stackoverflow.com/questions/10133856/how-to-add-an-image-in-tkinter
 # and
@@ -59,7 +59,6 @@ def open_dir():
     IMAGES = iter(IMAGES)
 
     next_image()
-
 
 
 def next_image():
