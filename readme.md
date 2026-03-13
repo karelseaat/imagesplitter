@@ -1,31 +1,35 @@
+# Image splitter
 
-# 1 Image splitter
+A simple desktop tool to sort images into *yes* or *no* bins—useful when preparing a dataset from a large folder of raw images.
 
-This project will spit images in a yes or not category.
-It is a tkinter gui app where you can choose a sourcemap (lots of images that load will take a lot of time)
-it is a tool to preliminary filter a lot of images so it is easyer to build a dataset of images.
+I built this because I kept manually opening and closing image files in a folder, getting tired of it. It’s not fancy, but it gets the job done.
 
+## Usage
 
-# 2 Structure
-No structure of other maps, and no structure needed
+- Select a source folder (all images in that folder load into the queue).
+- Click **Yes** or **No** to sort each image into its bin folder.
+- Bins are created automatically as subfolders (`yes/` and `no/`) next to the source folder.
 
+> Tip: Avoid huge folders—everything loads into memory at startup. I’ve used it comfortably with ~5k 1080p images.
 
-# 3.5 Things used
-python, tkinter, pil
+## Tech stack
 
+- Python 3.8+
+- `tkinter` (bundled)
+- `Pillow` (for image handling)
 
-# 3 How to run it
-This software depends on `pipenv` how one does `pipenv` one can find here: [pipenv](https://docs.python-guide.org/dev/virtualenvs/)
+## Setup & run
 
-Run: imagesplitter.py
+1. Install dependencies with `pipenv`:  
+   ```bash
+   pipenv install pillow
+   ```
+2. Run:  
+   ```bash
+   pipenv run python imagesplitter.py
+   ```
 
-# 4 Class diagram
+## Notes
 
-one script not calsses, now class diagram
-
-
-# 5 Packages used:
-
-`pillow`
-`everything-tkinter`
-`pylin`
+- No folder structure required—just point it at a flat directory of images.
+- No class hierarchy—single-script implementation. Just `imagesplitter.py`.
