@@ -33,3 +33,7 @@ I built this because I kept manually opening and closing image files in a folder
 
 - No folder structure required—just point it at a flat directory of images.
 - No class hierarchy—single-script implementation. Just `imagesplitter.py`.
+
+## More from Karelseaat
+
+For more projects and experiments, visit my GitHub Pages site: [karelseaat.github.io](https://karelseaat.github.io/)
